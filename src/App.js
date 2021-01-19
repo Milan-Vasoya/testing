@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import CardList from "./componentes/card-list/cardList.component";
 import SearchInput from './componentes/search-box-component/searchBox.component';
 import MonsterContext from "./componentes/create-Context/appContext";
+import './app.css';
 
 const App = () => {
   const [monsters, setMonsters] = useState([]);
@@ -25,6 +26,7 @@ const App = () => {
 
   return (
     <MonsterContext.Provider value={{result,text,setText}}>
+   
       <SearchInput />
       <CardList />
     </MonsterContext.Provider>

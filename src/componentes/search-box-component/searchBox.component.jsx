@@ -7,8 +7,8 @@ const SearchInput = () =>{
   const {text,setText} =useContext(MonsterContext);
   console.log(text);
   return (
-  <div>
-  
+  <div className='center'>
+  <h1>Monster Roledex</h1>
     <input
       className="search"
       type="serach"
